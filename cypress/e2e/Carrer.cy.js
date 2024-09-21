@@ -14,8 +14,8 @@ describe('Click Apply Now Button and Fill the Form', () => {
         cy.get('form', { timeout: 10000 }).should('be.visible');
 
         // Fill out the form fields using provided XPath selectors
-        cy.xpath("//input[@id='name']").should('be.visible').type('John Doe'); // Your Name
-        cy.xpath("//input[@id='email']").should('be.visible').type('john.doe@example.com'); // Your Email
+        cy.xpath("//input[@id='name']").should('be.visible').type('Newton Raj kaphle'); // Your Name
+        cy.xpath("//input[@id='email']").should('be.visible').type('kaphlenerob@gmail.com'); // Your Email
         cy.xpath("//input[@id='companyName']").should('be.visible').type('1234567890'); // Mobile Number
 
         // Attach CV file from the fixtures directory
