@@ -1,5 +1,5 @@
 const { describe } = require("mocha");
-import 'cypress-file-upload';
+//import 'cypress-file-upload';
 
 require('cypress-xpath');
 
