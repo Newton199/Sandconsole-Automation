@@ -21,6 +21,9 @@ describe('Click Apply Now Button and Fill the Form', () => {
         // Attach CV file from the fixtures directory
         cy.get("input[type='file']").attachFile('Newton Raj Kaphle Resume.pdf'); // No path needed if in fixtures
 
+        //To mock the captcha   and verify  this 
+        cy.intercept('POST', '/captcha/verify', { success: true }).as('captchaVerify');
+
         // Submit the form using the provided XPath for the button
         cy.xpath("//button[normalize-space()='SEND MESSAGE']").click();
     });
