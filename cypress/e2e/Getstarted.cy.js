@@ -13,16 +13,16 @@ describe('Get Started Form Test', function () {
 
         // Fill in the form fields with timeout applied globally
         cy.xpath("(//input[@placeholder='Enter Name'])[1]")
-          .type('John Doe');
+          .type('Newton');
 
         cy.xpath("(//input[@placeholder='Enter Phone Number'])[1]")
-          .type('1234567890');
+          .type('1233453345');
 
         cy.xpath("(//input[@placeholder='Company Name'])[1]")
-          .type('John Doe Inc.');
+          .type('Sand Console Inc.');
 
         cy.xpath("(//input[@placeholder='Enter Email'])[1]")
-          .type('johndoe@example.com');
+          .type('newton@example.com');
 
         cy.xpath("(//textarea[@placeholder='Enter message'])[1]")
           .type('Looking forward to a quote.');
