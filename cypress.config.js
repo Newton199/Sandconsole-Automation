@@ -8,7 +8,11 @@ module.exports = defineConfig({
       // Implement node event listeners here
       require('cypress-mochawesome-reporter/plugin')(on);
       this.screenshotOnRunFailure=true;
+     
 
     },
+   
+    
+    
   },
 });
