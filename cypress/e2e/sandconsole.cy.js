@@ -1,4 +1,3 @@
-require('cypress-xpath');
 
 describe('template spec', () => {
   it('passes', () => {
